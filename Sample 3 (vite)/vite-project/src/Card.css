@@ -1,29 +1,37 @@
+.Complete{
+    
+    
+    
+    padding: 30px;
+    
+    
+    
+    align-items: center;
+    width:fit-content;
+    height: fit-content;
+    background-color:dimgrey;
+    border-radius: 30px;
+  }
+
+
+
 .card {
+    gap: 20px;
     padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border-radius: 15px;
     width: 250px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
   }
   .green {
     background: green;
     color: black;
   }
-  
   .black {
     background: #222;
     color: white;
   }
-  .Complete{
-    
-    gap: 20px;
-    padding: 20px;
-    border: solid;
-    
-    justify-content: center;
-    align-items: center;
-    width:fit-content;
-    background-color:dimgrey;
-    border-radius: 30px;
-  }
+ 
   
