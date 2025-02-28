@@ -3,7 +3,7 @@ import Card from "./Card";
 import "./Card.css";
 
 function App() {
-  const nfts = [
+  const Data = [
     {
       owner: { name: "5811EX", avatar: "https://i.pravatar.cc/40?img=1" },
       creator: { name: "45TY87", avatar: "https://i.pravatar.cc/40?img=2" },
@@ -24,9 +24,15 @@ function App() {
 
   return (
     <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
-      {nfts.map((nft, index) => (
-        <Card key={index} {...nft} />
-      ))}
+      {Data.map((dta, index) => (
+
+        
+        <Card key={index} {...dta} />
+        
+        
+      ))
+      
+      }
     </div>
   );
 }

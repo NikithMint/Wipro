@@ -3,8 +3,8 @@ import "./Card.css";
 
 const Card = ({ owner, creator, image, price, usdPrice, color }) => {
   return (
-    <div className="nft-card">
-      <div className="nft-header">
+    <div className="Complete">
+      <div className="data-header">
         <div>
           <img src={owner.avatar} alt="Owner" />
           <span>Owned by {owner.name}</span>
@@ -15,13 +15,13 @@ const Card = ({ owner, creator, image, price, usdPrice, color }) => {
         </div>
       </div>
 
-      <img src={image} alt="NFT" className="nft-image" />
+      <img src={image} alt="image" className="data-image" />
 
-      <div className="nft-details">
-        <p className="nft-price">Price: ETH {price} ≈ ${usdPrice}</p>
+      <div className="data-details">
+        <p className="data-price">Price: ETH {price} ≈ ${usdPrice}</p>
       </div>
 
-      <div className="nft-actions">
+      <div className="data-actions">
         <span className="view-history">🔄 View history</span>
         <button className={`buy-now ${color}`}>Buy Now</button>
       </div>
