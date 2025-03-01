@@ -3,7 +3,7 @@
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    background: white;
+    background: rgb(246, 243, 243);
     border: 2px solid transparent;
     transition: 0.3s;
   }
@@ -17,7 +17,7 @@
     justify-content: space-between;
     padding: 10px;
     font-size: 12px;
-    color: gray;
+    color: rgb(212, 44, 44);
   }
   
   .data-header div {
