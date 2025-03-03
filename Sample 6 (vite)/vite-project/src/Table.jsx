@@ -1,7 +1,7 @@
 import React from "react";
 import "./Table.css"; // Create this for styling
 
-const transactions = [
+const data = [
   { card: "MasterCard *4920", type: "Credit", date: "Jun 24, 2023 10:00 am", status: "Verified", amount: 290.0,image:"https://www.shutterstock.com/image-vector/mastercard-icon-orange-red-260nw-2457881495.jpg" },
   { card: "Visa *4230", type: "Debit", date: "Jun 20, 2023 11:00 am", status: "Rejected", amount: 49.0,image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEdRE4elIptBYNu_D2M6TxSKgXooAfkt0fRQ&s" },
   { card: "Visa *5510", type: "Credit", date: "Jun 19, 2023 2:00 pm", status: "Pending", amount: -800.0,image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEdRE4elIptBYNu_D2M6TxSKgXooAfkt0fRQ&s" },
@@ -24,7 +24,7 @@ const Table = () => {
           </tr>
         </thead>
         <tbody>
-          {transactions.map((txn, index) => (
+          {data.map((txn, index) => (
             <tr key={index} className={txn.status.toLowerCase()}>
               
               <td><img src={txn.image} className="i"></img>  {txn.card} ({txn.type})</td>
