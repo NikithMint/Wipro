@@ -1,0 +1,48 @@
+.transactions {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  .verified {
+    color: green;
+  }
+  
+  .rejected {
+    color: red;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .positive {
+    color: green;
+  }
+  
+  .negative {
+    color: red;
+  }
+  .i{
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+
+  }
+  
