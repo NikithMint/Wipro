@@ -5,7 +5,7 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 import Logout from './Logout';
-
+import Profile from './Profile';
 
 
 const App = () => {
@@ -17,6 +17,7 @@ const App = () => {
       <Route path="/Contact" element={<Contact/>}/>
       <Route path="/About" element={<About/>}/>
       <Route path="/Logout" element={<Logout/>}/>
+      <Route path="Profile/:userId" element={<Profile/>} /> 
       </Routes>
     
     </>
