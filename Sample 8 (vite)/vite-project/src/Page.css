@@ -1,0 +1,30 @@
+.Main{
+    display: flex;
+    padding: 70px;
+    background-color: antiquewhite;
+    border-radius: 40px;
+    
+}
+.imgright img{
+    border-radius: 30px;
+    width: 500px;
+    height:500px;
+}
+
+.leftdown button{
+    background: transparent;
+    font-size: 16px;
+    color:#49557e ;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.left h1{
+    font-size: 80px;
+}
+.left h3{
+    padding-right: 700px;
+}
