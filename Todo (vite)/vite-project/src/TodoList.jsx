@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-
 function TodoList(){
 
     const [tasks, setTasks] = useState([]);
@@ -50,10 +49,10 @@ function TodoList(){
                     <button onClick={()=>edit(index)}>edit</button>
                 </li>
             )}
-        </ol>
 
+        </ol>
         <h1>{newTask}</h1>
-        <h1>{editt}</h1>
+        
     </div>);
 }
 export default TodoList
