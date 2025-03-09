@@ -3,6 +3,7 @@ import "./Question.css"
 const Questions = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
+
   const questions = [
     { question: "What is the question?", answer: "This is the answer." },
     { question: "What is the question?", answer: "This is the answer." },
@@ -13,9 +14,11 @@ const Questions = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+
   return (
     <div className="qa-container">
         
+    
       {questions.map((qa, index) => (
         <div key={index} className="qa-item">
             
@@ -24,6 +27,7 @@ const Questions = () => {
             <span className="arrow">{openIndex === index ? "^" : "*"}</span>
           </button>
           {openIndex === index && <div className="qa-answer"><strong>Answer:</strong> {qa.answer}</div>}
+          
         </div>
       ))}
     </div>
