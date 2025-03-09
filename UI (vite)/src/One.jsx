@@ -81,7 +81,6 @@ const One = () => {
                         </div>
                     </div> 
                     ))}
-                
             </div>
             <div className="order-summary">
                 <h1>ORDER SUMMARY</h1>
