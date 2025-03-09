@@ -1,0 +1,56 @@
+.shoppingbag h1{
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+.cmp-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+}
+img{
+    height: 300px;
+    width: 300px;
+}
+.order-summary{
+    color: white;
+    
+}
+.loop{
+    display: flex;
+    padding-bottom: 20px;
+}
+.text{
+    color: white;
+    padding: auto;
+}
+.text h4{
+    padding-left: 20px;
+    
+}
+.small{
+    display: flex;
+    justify-content: space-between;
+}
+.butt{
+    display: flex;
+    padding: 20px ;
+    font-size: 10px;
+    gap: 30px;
+    
+    
+    
+}
+.butt button{
+    color: white;
+    border:white;
+
+}
+.post,.sub,.shop,.total{
+    display: flex;
+    justify-content: space-between;
+}
+.order-summary button{
+    color: white;
+    font-size: 15px;
+}
