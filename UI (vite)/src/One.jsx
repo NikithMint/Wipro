@@ -39,13 +39,6 @@ const One = () => {
    
     const subtotal = counts.reduce((total, count, index) => total + count * data[index].price, 0);
 
-
-
-
-
-
-
-
   return (
     <div>
         <div className='shoppingbag'>
