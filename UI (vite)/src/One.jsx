@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "./One.css"
 const One = () => {
-
    
     const data = [
         {
