@@ -7,27 +7,27 @@ const One = () => {
         {
             image:"https://t3.ftcdn.net/jpg/05/80/61/14/360_F_580611440_4oCo3gd5XcCkpaRYyiO7QaS67rKEvLgI.jpg",
             name:"MID GREY SHARKSKIN SUIT",
-            price: "$ 1930",
+            price: 1930,
             size: 48,
             color: "grey"
         },
         {
             image:"https://images.jdmagicbox.com/quickquotes/images_main/ladies-long-coat-2220556289-7xrjwtzp.jpg",
             name:"BROWN PRINCE OF WALES LINEN SPOART COAT",
-            price: "$ 1930",
+            price: 1930,
             size: 48,
             color: "grey"
         }
     ];
     const [counts, setCounts] = useState(new Array(data.length).fill(0));
-    const [summ,setsumm] = useState(new Array(data.length).fill(0));
-
+    
     const inc = (index) => {
         setCounts((prevCounts) => {
             const newCounts = [...prevCounts]; // Copy array
             newCounts[index] += 1; // Modify only the required element
             return newCounts;
         });
+
     };
     
     const dec = (index) => {
@@ -37,6 +37,16 @@ const One = () => {
             return newCounts;
         });
     };
+   
+    const subtotal = counts.reduce((total, count, index) => total + count * data[index].price, 0);
+
+
+
+
+
+
+
+
   return (
     <div>
         <div className='shoppingbag'>
@@ -78,7 +88,7 @@ const One = () => {
                 <div className='inside-order-summary'>
                     <div className='sub'>
                         <h3>SUBTOTAL</h3>
-                        <h3> $7245 </h3>
+                        <h3> ${subtotal}</h3>
                     </div>
                     <div className='shop'>
                         <h3>SHOPPING</h3>
@@ -90,7 +100,7 @@ const One = () => {
                     </div>
                     <div className='total'>
                         <h3>TOTAL</h3>
-                        <h3>$7245</h3>
+                        <h3>${subtotal + 20}</h3>
                     </div>
                 </div>
                 <button>CHECK OUT</button>
