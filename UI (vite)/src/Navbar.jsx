@@ -10,7 +10,6 @@ const Navbar = () => {
             <a href="#">Cart</a>
         </div>
     </nav>
-
   )
 }
 
