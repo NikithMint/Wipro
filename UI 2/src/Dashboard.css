@@ -1,0 +1,109 @@
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .activity-card,
+  .shipment-card,
+  .chart-card,
+  .map-card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  /* Activity Section */
+  .activity-card ul {
+    list-style: none;
+    padding: 0;
+    
+  }
+  
+  .activity-item {
+    display: flex;
+    align-items:center;
+    
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    
+    /* border-bottom: 1px solid #ddd; */
+  }
+  
+  
+  
+  .activity-item .avatar {
+    font-size: 20px;
+  }
+  
+  .activity-item.highlighted {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Shipment Cards */
+  .shipment-card {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+  }
+  
+  .shipment-status {
+    display: inline-block;
+    background: #28a745;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    gap:20px;
+  }
+  .depature{
+    display: flex;
+    gap:800px;
+    padding: 20px;
+    align-items: baseline;
+    
+  }
+  
+ 
+
+  .shipment-card.secondary {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .tags {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .tags span {
+    background: #bbb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  /* Chart */
+  .chart-card {
+    grid-column: span 2;
+  }
+  
+  /* Map Section */
+  .map-card {
+    grid-column: span 2;
+    background: white;
+  }
+  
+  .map-placeholder {
+    height: 200px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+  
