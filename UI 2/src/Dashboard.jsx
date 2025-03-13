@@ -48,6 +48,9 @@ const Dashboard = () => {
 
       {/* Shipment Status */}
       <div className="shipment-card">
+        <div class="loading-container">
+        <div class="loading-bar"></div>
+        </div>
         <h3>#TN24512-SF-NY</h3>
         <div className="ship">
             <button className="shipment-status">In Transit</button>
@@ -84,6 +87,7 @@ const Dashboard = () => {
 
       {/* Second Shipment Card */}
       <div className="shipment-card secondary">
+        
         <h3>#TN23543-NY-CA</h3>
         <div className="tags">
           <span>At Customs</span>
@@ -109,7 +113,7 @@ const Dashboard = () => {
       {/* Map Placeholder */}
       <div className="map-card">
         <h3>Location Tracking</h3>
-        <div className="map-placeholder">📍 Map will be displayed here</div>
+        <div className="map-placeholder"><img src="https://www.expertgps.com/images/street-map-sample.png"></img></div>
       </div>
 
     </div>
