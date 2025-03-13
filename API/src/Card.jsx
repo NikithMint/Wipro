@@ -1,15 +1,20 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-const Card = ({ title, desc, rating, progress, color, delta = [] }) => {
+
+const Card = ({delta = [] }) => {
   return (
-    <motion.div>
+ 
         <div>
         {
         delta && delta.map((i)=>(
         <div className='Movie'>
          
         <h1>{i.id}</h1>
+        <h2>{i.title}</h2>
+        <h3>{i.body}</h3>
+        
+        
+      
         <br></br>
         <br></br>
         
@@ -23,7 +28,7 @@ const Card = ({ title, desc, rating, progress, color, delta = [] }) => {
       
           
       </div>
-    </motion.div>
+
   );
 };
 

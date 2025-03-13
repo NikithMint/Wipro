@@ -6,6 +6,7 @@ import Card from "./Card";
 const App = () => {
 
   const [delta,setdelta]=useState([])
+  const [count,setcount]=useState(0)
 
 
   useEffect(() =>{
@@ -17,12 +18,14 @@ const App = () => {
 
 
   return (
-    <div className="min-h-screen flex justify-center items-center bg-beige-100 p-6">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl">
+    <div>
+      <div>
         
           <Card delta={delta}/>
+          
       
       </div>
+      
     </div>
   );
 };
