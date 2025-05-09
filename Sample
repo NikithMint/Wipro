@@ -1,24 +1,8 @@
-import { NgModule, ApplicationRef } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { DatabaseCmpComponent } from './database-cmp/database-cmp.component';
-import { UlToolsComponent } from './ul-tools/ul-tools.component';
+import { bootstrapApplication } from '@angular/platform-browser';
+import { DatabaseCmpComponent } from './app/database-cmp/database-cmp.component';
+import { UitoolsComponent } from './app/uitools/uitools.component';
 
-@NgModule({
-  declarations: [
-    DatabaseCmpComponent,
-    UlToolsComponent
-  ],
-  imports: [ BrowserModule ],
-  entryComponents: [DatabaseCmpComponent, UlToolsComponent]
-})
-export class AppModule {
-  ngDoBootstrap(appRef: ApplicationRef) {
-    const loadDatabase = true; // Set to false to load UlToolsComponent
+const loadDatabase = true; // change to false to load UITools
 
-    if (loadDatabase) {
-      appRef.bootstrap(DatabaseCmpComponent);
-    } else {
-      appRef.bootstrap(UlToolsComponent);
-    }
-  }
-}
+bootstrapApplication(loadDatabase ? DatabaseCmpComponent : UitoolsComponent)
+  .catch(err => console.error(err));
