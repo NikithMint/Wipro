@@ -13,3 +13,4 @@ export class ReversePipe implements PipeTransform {
     return value.split('').reverse().join('');
   }
 }
+<p>{{ 'Angular' | reverse }}</p> <!-- Output: ralugnA -->
