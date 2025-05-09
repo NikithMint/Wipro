@@ -1,28 +1,24 @@
+import { NgModule, ApplicationRef } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DatabaseCmpComponent } from './database-cmp/database-cmp.component';
+import { UlToolsComponent } from './ul-tools/ul-tools.component';
 
-<body>
-  <app-database-cmp></app-database-cmp>
-  <app-ul-tools></app-ul-tools>
-</body>
-
-import { Pipe, PipeTransform } from '@angular/core';
-
-@Pipe({
-  name: 'reverse'
+@NgModule({
+  declarations: [
+    DatabaseCmpComponent,
+    UlToolsComponent
+  ],
+  imports: [ BrowserModule ],
+  entryComponents: [DatabaseCmpComponent, UlToolsComponent]
 })
-export class ReversePipe implements PipeTransform {
-  transform(value: string): string {
-    return value.split('').reverse().join('');
+export class AppModule {
+  ngDoBootstrap(appRef: ApplicationRef) {
+    const loadDatabase = true; // Set to false to load UlToolsComponent
+
+    if (loadDatabase) {
+      appRef.bootstrap(DatabaseCmpComponent);
+    } else {
+      appRef.bootstrap(UlToolsComponent);
+    }
   }
 }
-<p>{{ 'Angular' | reverse }}</p> <!-- Output: ralugnA -->
-import { Component } from '@angular/core';
-import { ReversePipe } from '../reverse.pipe';  // adjust the path if needed
-
-@Component({
-  selector: 'app-uitools',
-  standalone: true,
-  imports: [ReversePipe],  // import the pipe here
-  templateUrl: './uitools.component.html',
-  styleUrls: ['./uitools.component.css']
-})
-export class UitoolsComponent {}
