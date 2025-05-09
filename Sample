@@ -1,27 +1,4 @@
-import { NgModule, ApplicationRef, DoBootstrap } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { createCustomElement } from '@angular/elements';
-
-import { AppComponent } from './app.component';
-import { DatabaseCmpComponent } from './database-cmp/database-cmp.component';
-import { UlToolsComponent } from './ul-tools/ul-tools.component';
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    DatabaseCmpComponent,
-    UlToolsComponent
-  ],
-  imports: [BrowserModule],
-  entryComponents: [DatabaseCmpComponent, UlToolsComponent] // Important for ngDoBootstrap
-})
-export class AppModule implements DoBootstrap {
-  constructor(private appRef: ApplicationRef) {}
-
-  ngDoBootstrap(appRef: ApplicationRef) {
-    // Pick which component to bootstrap
-    appRef.bootstrap(DatabaseCmpComponent);
-    // To bootstrap UlTools instead, comment the above and uncomment the below line:
-    // appRef.bootstrap(UlToolsComponent);
-  }
-}
+<body>
+  <app-database-cmp></app-database-cmp>
+  <app-ul-tools></app-ul-tools>
+</body>
