@@ -1,3 +1,4 @@
+
 <body>
   <app-database-cmp></app-database-cmp>
   <app-ul-tools></app-ul-tools>
@@ -14,3 +15,14 @@ export class ReversePipe implements PipeTransform {
   }
 }
 <p>{{ 'Angular' | reverse }}</p> <!-- Output: ralugnA -->
+import { Component } from '@angular/core';
+import { ReversePipe } from '../reverse.pipe';  // adjust the path if needed
+
+@Component({
+  selector: 'app-uitools',
+  standalone: true,
+  imports: [ReversePipe],  // import the pipe here
+  templateUrl: './uitools.component.html',
+  styleUrls: ['./uitools.component.css']
+})
+export class UitoolsComponent {}
